@@ -43,6 +43,10 @@
             <div class="header-text" id="">
                 <p>UI/UX Designer</p>
                 <h1>Hi, I'm <span>Herman</span> <br> from Philippines</h1>  
+                 <div class="containers">
+                    <span class="text first-text">I'm a</span>
+                    <span class="text sec-text">Freelancer</span>
+                </div>
             </div>  
             <div class="img2">
                 <img src="user.png" alt="">
@@ -321,6 +325,28 @@
         nav.classList.toggle("sticky", window.scrollY > 0);
     })
 
+        
+        
+ const text = document.querySelector(".sec-text");
+
+const textLoad = () => {
+    setTimeout(() =>{
+        text.textContent = "Freelancer";
+    }, 0);
+    setTimeout(() =>{
+        text.textContent = "Husband";
+    }, 4000);
+    setTimeout(() =>{
+        text.textContent = "Father";
+    }, 8000);
+    setTimeout(() =>{
+        text.textContent = "son";
+    }, 12000);
+    
+}
+
+textLoad();
+setInterval(textLoad, 12000);
    
     </script>
 
